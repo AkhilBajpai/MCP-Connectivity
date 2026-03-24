@@ -1,4 +1,4 @@
-# Day 3 — GitHub Repository Tooling Server
+# GitHub Repository Tooling Server
 
 An MCP server that exposes GitHub operations — listing repos, reading files,
 and searching code — as callable tools for any MCP client.
