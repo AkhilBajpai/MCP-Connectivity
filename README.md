@@ -1,4 +1,4 @@
-# Day 1 — MCP Server Architecture
+# MCP Server Architecture
 
 Foundation of a Model Context Protocol server built with the official TypeScript SDK.
 
