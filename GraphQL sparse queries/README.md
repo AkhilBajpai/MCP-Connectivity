@@ -1,4 +1,4 @@
-# Day 4 — GraphQL Integration for Sparse Data Retrieval
+# GraphQL Integration for Sparse Data Retrieval
 
 An MCP server that constructs minimal GraphQL queries from a schema registry,
 fetching only the fields the agent needs to conserve context-window tokens.
