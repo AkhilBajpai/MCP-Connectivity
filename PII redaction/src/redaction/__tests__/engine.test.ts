@@ -19,7 +19,7 @@ describe("RedactionEngine", () => {
   });
 
   it("replaces SSNs", () => {
-    const result = engine.redact("SSN: 123-45-6789");
+    const result = engine.redact("SSN: 987-65-4320");
     expect(result.text).toBe("SSN: [SSN_1]");
   });
 
