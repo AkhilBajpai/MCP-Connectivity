@@ -1,0 +1,13 @@
+USE ROLE AI_ENGINEER_ROLE;
+USE WAREHOUSE AI_WH;
+USE SCHEMA AI_DATA_ENG.DOC_PROCESSING;
+
+CREATE TABLE IF NOT EXISTS PARSED_DOCUMENTS (
+    doc_id          STRING DEFAULT UUID_STRING(),
+    file_name       STRING NOT NULL,
+    page_number     INT,
+    raw_content     VARIANT,
+    structured_text STRING,
+    parse_mode      STRING DEFAULT 'LAYOUT',
+    ingested_at     TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
