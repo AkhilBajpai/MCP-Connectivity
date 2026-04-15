@@ -1,0 +1,13 @@
+cortexflow:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: AI_ENGINEER_ROLE
+      database: AI_DATA_ENG
+      warehouse: AI_WH
+      schema: DOC_PROCESSING
+      threads: 4

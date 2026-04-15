@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_document_chunks
+    description: >
+      Document text split into overlapping chunks using recursive character
+      splitting. Each chunk carries source metadata for citation.
+    columns:
+      - name: chunk_id
+        tests:
+          - unique
+          - not_null
+      - name: chunk_text
+        tests:
+          - not_null
+      - name: chunk_length
+        description: Character count of the chunk

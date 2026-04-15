@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: doc_processing
+    database: AI_DATA_ENG
+    schema: DOC_PROCESSING
+    tables:
+      - name: parsed_documents
+        description: Raw parsed output from AI_PARSE_DOCUMENT
+
+models:
+  - name: stg_parsed_documents
+    description: Filtered parsed documents with minimum content threshold
+    columns:
+      - name: doc_id
+        tests:
+          - not_null
+      - name: structured_text
+        tests:
+          - not_null
