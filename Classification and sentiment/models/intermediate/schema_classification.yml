@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_classified_chunks
+    description: >
+      Document chunks enriched with sentiment and topic classification
+      via Snowflake Cortex LLM completion.
+    columns:
+      - name: chunk_id
+        tests:
+          - unique
+          - not_null
+      - name: sentiment
+        description: One of positive, neutral, negative
+        tests:
+          - accepted_values:
+              values: ['positive', 'neutral', 'negative']
+              config:
+                severity: warn
+
+  - name: int_sentiment_summary
+    description: Aggregate sentiment distribution per document
