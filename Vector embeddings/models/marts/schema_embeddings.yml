@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: mart_document_embeddings
+    description: >
+      Production-ready document chunks with 768-dim vector embeddings,
+      sentiment, and topic metadata. Serves as the retrieval layer
+      for semantic search.
+    columns:
+      - name: chunk_id
+        tests:
+          - unique
+          - not_null
+      - name: chunk_embedding
+        description: 768-dimensional float vector from snowflake-arctic-embed-m
+      - name: sentiment
+        description: Sentiment polarity from classification step
+      - name: primary_topic
+        description: Extracted topic label
