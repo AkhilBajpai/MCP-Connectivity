@@ -1,0 +1,26 @@
+[
+  {
+    "content": "The OAuth2 client credentials flow exchanges a client ID and secret for a short-lived access token. This is the standard pattern for service-to-service authentication where no user interaction is required.",
+    "source_file": "auth_guide.pdf",
+    "page_number": 1,
+    "category": "authentication",
+    "sentiment": "neutral",
+    "chunk_index": 0
+  },
+  {
+    "content": "Vector similarity search computes the cosine distance between a query embedding and stored document embeddings. Results are ranked by proximity in the embedding space, not by keyword overlap.",
+    "source_file": "search_architecture.pdf",
+    "page_number": 3,
+    "category": "search",
+    "sentiment": "neutral",
+    "chunk_index": 1
+  },
+  {
+    "content": "Rate limiting prevents API abuse by tracking request counts per client within sliding time windows. When the limit is exceeded, the server returns HTTP 429 with a Retry-After header.",
+    "source_file": "api_design.pdf",
+    "page_number": 7,
+    "category": "infrastructure",
+    "sentiment": "neutral",
+    "chunk_index": 2
+  }
+]
